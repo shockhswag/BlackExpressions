@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #EBD1A1;
+    min-height: 100vh;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    color: #2f1503;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+.home-btn {
+    color: white;
+    background-color: #e86C2E;
+    border: 2px solid #e86C2E;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.home-btn:hover {
+    background-color: #E88C2E;
+    border: 2px solid #E88C2E;
+    transition: ease 0.4s;
+}
+
+.btn{
+    color: #e86C2E;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.btn:hover{
+    background-color: #e86C2E;
+    color: white;
+    transition: ease 0.4s;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20%;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #e86C2E, transparent);
+}
+
+section #text {
+    position: absolute;
+    color: #2f1503;
+    font-size: 15vh;
+    text-align: center;
+    line-height: 0.85;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+section #text span {
+    color: #e86C2E;
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400px;
+}
+
+section #img {
+    display: flex;
+    position: absolute;
+    left: 60%;
+    height: 500px;
+    width: 500px;
+}
+
+section #img2 {
+    display: flex;
+    position: absolute;
+    right: 70%;
+    height: 360px;
+}
+
+.sec{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 5%;
+    background: #e86C2E;
+}
+
+.sec::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #EBD1A1, transparent);
+}
+
+.sec h2{
+    font-size: 3.5em;
+    color: #2f1503;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.sec #paint1 {
+    height: 800px;
+    margin: 50px;
+}
+
+.sec p {
+    margin: 15px;
+    font-size: 1.5em;
+    color: #2f1503;
+}
+
+.sec #autor {
+    font-size: 1em;
+    color: #2f1503;
+    margin: 15px;
+    position: relative;
+    display: flex;
+    left: 30%;
+}
+.sec2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 5%;
+    background: #EBD1A1;
+}
+
+.sec2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #e86C2E, transparent); 
+}
+
+.sec2 h2{
+    font-size: 3.5em;
+    color: #2f1503;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.sec2 #paint1 {
+    height: 800px;
+    margin: 50px;
+}
+
+.sec2 p {
+    margin: 15px;
+    font-size: 1.5em;
+    color: #2f1503;
+}
+
+.sec2 #autor {
+    font-size: 1em;
+    color: #2f1503;
+    margin: 15px;
+    position: relative;
+    display: flex;
+    left: 30%;
+}
+
+.final {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 5%;
+    background: #e86C2E;
+}
+
+.final h2{
+    font-size: 3.5em;
+    color: #2f1503;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.final p{
+    margin: 15px;
+    font-size: 1.5em;
+    color: #2f1503;
+}
+
+.final .div .img1 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin: 10;
+    top: 45%;
+}
+.final .div .img2 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin: 10;
+    left: 30%;
+    top: 45%;
+}
+.final .div .img3 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin: 10;
+    left: 55%;
+    top: 45%;
+}
+.final .div .img4 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin: 10;
+    left: 80%;
+    top: 45%;
+}
+
+.final .nomes #arthur {
+    color: #2f1503;
+    font-size: 1.5em;
+    position: absolute;
+    left: 6.5%;
+    top: 77%;
+}
+.final .nomes #davi {
+    color: #2f1503;
+    font-size: 1.5em;
+    position: absolute;
+    left: 33%;
+    top: 77%;
+}
+.final .nomes #joao {
+    color: #2f1503;
+    font-size: 1.5em;
+    position: absolute;
+    left: 57.5%;
+    top: 77%;
+}
+.final .nomes #miguel {
+    color: #2f1503;
+    font-size: 1.5em;
+    position: absolute;
+    left: 82.5%;
+    top: 77%;
+}

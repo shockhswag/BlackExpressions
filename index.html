@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/style.css" rel="stylesheet">
+    <title>BlackExpressions</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">BlackExpressions</a>
+        <ul>
+            <a href="#inicio" class="home-btn"><li>Início</li></a>
+            <a href="#secao1" class="btn"><li>Pintura 1</li></a>
+            <a href="#secao2" class="btn"><li>Pintura 2</li></a>
+            <a href="#sobre-nos" class="btn"><li>Sobre</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2 id="text"><span>Onde a Arte Fala em Tons de</span><br>Negro</h2>
+            <img src="styles/Novo Projeto (1).png" id="img">
+        </section>
+    </main>
+    <section class="sec" id="secao1">
+        <h2>O princípio do ventre</h2>
+        <img src="styles/20231115_160322.jpg" id="paint1">
+        <p> A imagem mostra o feto negro na barriga de uma mãe negra, no qual ele está acorrentado. O cordão umbilical está simbolizado por uma corrente, que demonstra que o bebê está limitado nas suas ações.</p>
+        <p id="autor">Autor: Desconhecido</p>
+    </section>
+    <section class="sec2" id="secao2">
+        <h2> A dor de não poder sentir dor</h2>
+        <img src="styles/20231115_160338.jpg" id="paint1">
+        <p>A imagem está mostrando um jovem que tá com suas mãos acorrentadas em um tronco, que simboliza a sociedade, o jovem também tem cicatrizes no corpo, que simboliza atos racistas.</p>
+        <p id="autor">Autor: Desconhecido</p>
+    </section>
+    <section class="final" id="sobre-nos">
+        <h2>Sobre nós</h2>
+        <p>Somos um grupo do 3° ano A, do ensino médio técnico do Senac, mais conhecido como mediotec. Esse é um site que criamos para expor as nossas artes, feitas para o dia da consciência negra.</p>
+        <div class="div">
+            <img src="estudantes/Arthur.jpeg" id="Arthur" class="img1">
+            <img src="estudantes/Davi.jpeg" id="Davi" class="img2">
+            <img src="estudantes/João.jpeg" id="João" class="img3">
+            <img src="estudantes/Miguel.jpeg" id="Miguel" class="img4">
+        </div>
+        <div class="nomes">
+            <h3 id="arthur">Arthur Pereira</h3>
+            <h3 id="davi">Davi Luca</h3>
+            <h3 id="joao">João Fillipe</h3>
+            <h3 id="miguel">Miguel Vitor</h3>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Seleciona todos os links do cabeçalho
+            var links = document.querySelectorAll('header ul a');
+    
+            // Adiciona um ouvinte de evento de clique a cada link
+            links.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    // Previne o comportamento padrão do link
+                    event.preventDefault();
+    
+                    // Obtém o ID da seção alvo do atributo href do link
+                    var targetId = this.getAttribute('href').substring(1);
+    
+                    // Obtém a seção alvo usando o ID
+                    var targetSection = document.getElementById(targetId);
+    
+                    // Rola a página para a seção alvo
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
